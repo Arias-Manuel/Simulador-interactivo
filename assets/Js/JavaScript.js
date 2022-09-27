@@ -1,6 +1,7 @@
 let usuario = prompt("¡Hola!. ¿Cual es tu nombre/apodo?");
 
 while (!isNaN(usuario) || usuario == null) {
+  
   usuario = prompt(`Con que: --->${usuario} <--- la verdad, no creo que eso sea un nombre o hasta creo que no pusiste ninguno jeje, porfavor inserta tu nombre o apodo, como suele llamarte`);
 
   if (usuario === null) {
@@ -40,7 +41,7 @@ if (("tl" === conversion) || ("Tl" ===  conversion)  || ("TL" ===  conversion)) 
   resultado = equivalenciaNumerica * tl;
 
   document.write(`Aqui,${usuario}, te dejo el resultado de los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Toneladas, su resultado es ${resultado} TL`);
-  alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a toneladas son ${resultado} Tl`);
+  alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a toneladas son ${resultado} Tl\n\n¡Hasta luego!`);
   console.log(`${resultado} Tl, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
 
   } else if (("gr" === conversion) || ("Gr" ===  conversion)  || ("GR" ===  conversion)) {
@@ -48,7 +49,7 @@ if (("tl" === conversion) || ("Tl" ===  conversion)  || ("TL" ===  conversion)) 
     resultado = equivalenciaNumerica * gr;
 
     document.write(`Aqui,${usuario}, te dejo el resultado de los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Gramos, su resultado es ${resultado} Gr`);
-    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a gramos son ${resultado} Gr`);
+    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a gramos son ${resultado} Gr\n\n¡Hasta luego!`);
     console.log(`${resultado} Gr, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
 
   } else if (("mg" === conversion) || ("Mg" === conversion) || ("MG" === conversion)) {
@@ -56,7 +57,7 @@ if (("tl" === conversion) || ("Tl" ===  conversion)  || ("TL" ===  conversion)) 
     resultado = equivalenciaNumerica * mg;
 
     document.write(`Aqui,${usuario}, te dejo el resultado de los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Miligramos, su resultado es ${resultado} Mg`);
-    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Miligramos son ${resultado} Gr`);
+    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Miligramos son ${resultado} Gr\n\n¡Hasta luego!`);
     console.log(`${resultado} Mg, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
 
   } else if (("ug" === conversion) || ("Ug" === conversion) || ("UG" === conversion)) {
@@ -64,7 +65,7 @@ if (("tl" === conversion) || ("Tl" ===  conversion)  || ("TL" ===  conversion)) 
     resultado = equivalenciaNumerica * ug;
 
     document.write(`Aqui,${usuario}, te dejo el resultado de los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Microgramos, su resultado es ${resultado} Ug`);
-    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Microgramos son ${resultado} Ug`);
+    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Microgramos son ${resultado} Ug\n\n¡Hasta luego!`);
     console.log(`${resultado} Ug, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
 
   } else if (("ng" === conversion) || ("Ng" === conversion) || ("NG" === conversion)) {
@@ -72,7 +73,7 @@ if (("tl" === conversion) || ("Tl" ===  conversion)  || ("TL" ===  conversion)) 
     resultado = equivalenciaNumerica * ng;
 
     document.write(`Aqui,${usuario}, te dejo el resultado de los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Nanogramos, su resultado es ${resultado} Ng`);
-    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a gramos son ${resultado} Ng`);
+    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a gramos son ${resultado} Ng\n\n¡Hasta luego!`);
     console.log(`${resultado} Ng, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
 
   } else if (("pg" === conversion) || ("Pg" === conversion) || ("PG" === conversion)) {
@@ -80,7 +81,7 @@ if (("tl" === conversion) || ("Tl" ===  conversion)  || ("TL" ===  conversion)) 
     resultado = equivalenciaNumerica * pg;
 
     document.write(`Aqui,${usuario}, te dejo el resultado de los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Picogramos, su resultado es ${resultado} Pg`);
-    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a gramos son ${resultado} Gr`);
+    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a gramos son ${resultado} Pg\n\n¡Hasta luego!`);
     console.log(`${resultado} Pg, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
 
   } else {
