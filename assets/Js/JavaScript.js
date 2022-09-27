@@ -21,7 +21,7 @@ while (isNaN(equivalenciaNumerica) || (equivalenciaNumerica == 0) ) {
 
 console.log(`${equivalenciaNumerica}kg ----------> es el valor inicial`)
 
-let conversion = prompt(`El valor que elegiste ${usuario} es ---> ${equivalenciaNumerica} Kg (Kilogramos) \n\nAhora de la siguiente lista, ${usuario}, escoja que medida de peso desea obtener a partir de los Kilogramos escritos, escribiendo los sufijos de la lista \n\n tl/Tl/TL (toneladas) \n\n gr/Gr/GR (gramos) \n\n mg/Mg/MG (miligramos) \n\n ug/Ug/UG (microgramos) \n\n ng/Ng/NG (nanogramos) \n\n pg/Pg/PG (picogramos)\n`);
+let conversion = prompt(`El valor que elegiste ${usuario} es ---> ${equivalenciaNumerica} Kg (Kilogramos) \n\nAhora de la siguiente lista, ${usuario}, escoja que medida de peso desea obtener a partir de los Kilogramos escritos, escribiendo los sufijos de la lista \n\n tl/Tl/TL (toneladas) \n\n gr/Gr/GR (gramos) \n\n mg/Mg/MG (miligramos) \n\n ug/Ug/UG (microgramos) \n\n ng/Ng/NG (nanogramos) \n\n pg/Pg/PG (picogramos)\n\n\nSistemas de unidades de masa utilizados en otros paises:\n\n lb/Lb/LB (libras)\n\n oz/Oz/OZ (Onzas)\n\n`);
 
 
 console.log(`${equivalenciaNumerica}kg -------> a ----> ${conversion} son:`)
@@ -35,6 +35,8 @@ function equivalenciaPeso() {
   let ug = 1000000000;
   let ng = 1000000000000;
   let pg = 1000000000000000;
+  let lb = 2.20462;
+  let oz = 35.274;
 
 if (("tl" === conversion) || ("Tl" ===  conversion)  || ("TL" ===  conversion)) {
 
@@ -84,7 +86,23 @@ if (("tl" === conversion) || ("Tl" ===  conversion)  || ("TL" ===  conversion)) 
     alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a gramos son ${resultado} Pg\n\n¡Hasta luego!`);
     console.log(`${resultado} Pg, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
 
-  } else {
+  } else if (("lb" === conversion) || ("Lb" === conversion) || ("LB" === conversion)) {
+
+    resultado = equivalenciaNumerica * lb;
+
+    document.write(`Aqui,${usuario}, te dejo el resultado de los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Libras, su resultado es ${resultado} Lb`);
+    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a libras son ${resultado} Lb\n\n¡Hasta luego!`);
+    console.log(`${resultado} Lb, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
+
+  } else if (("oz" === conversion) || ("Oz" === conversion) || ("OZ" === conversion)) {
+
+    resultado = equivalenciaNumerica * oz;
+
+    document.write(`Aqui,${usuario}, te dejo el resultado de los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Onzas, su resultado es ${resultado} Oz`);
+    alert(`Hola, otra vez, ${usuario}. Los ${equivalenciaNumerica} Kg (Kilogramos) convertidos a Onzas son ${resultado} Oz\n\n¡Hasta luego!`);
+    console.log(`${resultado} Oz, gracias por usar este sistema ${usuario}, ¡Hasta luego!`);
+
+  }else {
     
     document.write(`---> Los ${equivalenciaNumerica}kg <--- no se a logrado realizar alguna equivalencia ya que no selecciono o escribio el sufijo correspondiente, porfavor refresque la pagina`);
     alert("No has escrito/escribiste mal unos de los sufijos de la lista, intente nuevamente");
